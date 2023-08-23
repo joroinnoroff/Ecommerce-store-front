@@ -1,6 +1,6 @@
 import Button from '@/components/ui/Button'
 import React from 'react'
-import Contactform from './components/contactform'
+ 
 
 import { HiMail } from "react-icons/hi";
 
