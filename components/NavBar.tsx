@@ -4,7 +4,7 @@ import Link from 'next/link'
 import MainNav from './MainNav'
 import getCategories from '@/actions/get-categories'
 import NavBarActions from './NavBarActions'
-import MobileNav from './MobileNav'
+ 
 
 
 
