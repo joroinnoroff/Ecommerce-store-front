@@ -30,7 +30,7 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({
     <>
       <Button
         onClick={onOpen}
-        className="flex items-center gap-x-2 lg:hidden"
+        className="flex items-center gap-x-2 lg:hidden bg-gradient-to-r from-pink-500 to-purple-500"
       >
         Filters
         <Plus size={20} />

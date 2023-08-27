@@ -11,7 +11,10 @@ const About = () => {
     >
       <h2 className="text-3xl font-medium text-gray-900">
         Kort Om Meg
+
       </h2>
+
+      
       <div className="mt-6 space-y-4">
         <div className="flex items-center flex-col justify-between border-t border-gray-200 pt-4">
           <div className="text-base font-medium text-gray-900 mx-2 py-3">         
@@ -27,8 +30,20 @@ const About = () => {
           </div>
        
 
-        <Button><a href="mailto:example@example.com" target="_blank" className='flex items-center'>Her <HiMail size={30}/></a>
-        </Button>
+          <div class="container">
+           <div class="wrapper">
+            <button class="btn">
+            <div class="btn__bg">
+              <span class="btn__bg__layer btn__bg__layer-first"></span>
+              <span class="btn__bg__layer btn__bg__layer-second"></span>
+              <span class="btn__bg__layer btn__bg__layer-third"></span>
+             </div>
+
+              <span class="btn__text-out"><a href="mailto:example@example.com" target="_blank">Ta kontakt Her</a></span>
+              <span class="btn__text-in"><a href="mailto:example@example.com" target="_blank">Ta kontakt Her</a></span>
+          </button>
+        </div>
+        </div>
         </div>
       </div>
   
