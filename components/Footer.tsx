@@ -18,8 +18,8 @@ const Footer = () => {
               <span className="btn__bg__layer btn__bg__layer-third"></span>
              </div>
 
-    <span className="btn__text-out"><a href="mailto:example@example.com" target="_blank">Contact Here</a></span>
-    <span className="btn__text-in"><a href="mailto:example@example.com" target="_blank">Contact  Here</a></span>
+    <span className="btn__text-out"><a href="mailto:aurora_sagvolden@gmail.com" target="_blank">Contact Here</a></span>
+    <span className="btn__text-in"><a href="mailto:aurora_sagvolden@gmail.com" target="_blank">Contact  Here</a></span>
   </button>
 </div>
 </div>

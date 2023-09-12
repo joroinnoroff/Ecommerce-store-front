@@ -82,7 +82,7 @@ const MainNav: React.FC<MainNavProps> = ({
                 href={route.href}
                 className={cn(
                   'text-2xl font-medium transition-colors hover:text-white md:hover:text-white',
-                  route.active ? 'text-black' : 'text-neutral-200'
+                  route.active ? 'text-neutral-500' : 'text-neutral-200'
                 )}
                 onClick={() => setToggle(false)} // Close the menu when a route is clicked
               >
