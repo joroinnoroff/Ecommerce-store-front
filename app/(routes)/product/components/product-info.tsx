@@ -14,7 +14,7 @@ const ProductInfo = () => {
     <AccordionItem value="item-1">
       <AccordionTrigger>Delivery time</AccordionTrigger>
       <AccordionContent>
-        Items are made after Order is done, delivery estimate 2-3 weeks.
+        Items are made after Item is purchased, delivery estimate 2-3 weeks.
       </AccordionContent>
     </AccordionItem>
   </Accordion>

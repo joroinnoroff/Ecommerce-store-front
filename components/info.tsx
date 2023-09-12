@@ -12,6 +12,10 @@ interface InfoProps {
 };
 
 const Info: React.FC<InfoProps> = ({ data }) => {
+  const customStyles = {
+    backgroundColor: 'var(--color-main)',
+  };
+
   const cart = useCart();
 
   const onAddToCart = () => {
@@ -40,7 +44,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         </div>
       </div>
       <div className="mt-10 flex items-center gap-x-3">
-        <Button onClick={onAddToCart} className="flex items-center gap-x-2 bg-yellow-500">
+        <Button onClick={onAddToCart} className="flex items-center gap-x-2" style={customStyles}>
           Add To Cart
           <ShoppingCart size={20} />
         </Button>

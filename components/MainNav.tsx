@@ -73,7 +73,7 @@ const MainNav: React.FC<MainNavProps> = ({
         {toggle ? <XIcon /> : <MenuIcon />}
       </div>
           
-      <div className={`${!toggle ? 'hidden' : 'flex'} p-10 bg-gradient-to-t from-blue-700 to-blue-500 absolute top-20 right-0 h-screen-full w-full z-10 rounded-xl flex items-center flex-col `}>
+      <div className={`${!toggle ? 'hidden' : 'flex'} p-10 bg-black text-center absolute top-20 right-0 h-screen-full w-full z-10 rounded-xl flex items-center flex-col `}>
         <ul className="flex">
           <li className="flex flex-col gap-5">
             {routes.map((route) => (

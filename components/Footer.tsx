@@ -18,8 +18,8 @@ const Footer = () => {
               <span className="btn__bg__layer btn__bg__layer-third"></span>
              </div>
 
-    <span className="btn__text-out"><a href="mailto:example@example.com" target="_blank">Contact Us Here</a></span>
-    <span className="btn__text-in"><a href="mailto:example@example.com" target="_blank">Contact Us Here</a></span>
+    <span className="btn__text-out"><a href="mailto:example@example.com" target="_blank">Contact Here</a></span>
+    <span className="btn__text-in"><a href="mailto:example@example.com" target="_blank">Contact  Here</a></span>
   </button>
 </div>
 </div>
@@ -29,7 +29,7 @@ const Footer = () => {
       </Link>
       <SiAdobe size={40} color="#000" />  
       </div>
-    <p className='text-center text-xs text-black'>
+    <p className='text-center text-xs text-black mt-3'>
     &copy; 2023 Jorgen Oino - All rights Reserved.
     </p>
     </div>
