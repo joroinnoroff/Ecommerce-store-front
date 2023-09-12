@@ -1,7 +1,8 @@
 import Button from '@/components/ui/Button'
 import React from 'react'
 import Strykejl from '../../../components/assets/images/logo-strykejernet-kunstskole.png'
- 
+import Enom from '../../../components/assets/images/ENLOGO.png'
+  
 import Indesign from './components/Indesign'
 import { SiAdobeindesign } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
@@ -42,6 +43,9 @@ const About = () => {
 
 
         <Indesign />
+
+        <Image src={Enom} alt="Estudio-nomada-logo" 
+        className='w-full'/>
         </div>
         </div>
 
