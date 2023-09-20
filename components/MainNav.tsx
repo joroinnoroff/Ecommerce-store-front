@@ -23,11 +23,7 @@ const MainNav: React.FC<MainNavProps> = ({
     active: pathname === `/category/${route.id}`,
   }));
 
-  const [menuOpen, setMenuOpen] = useState(false);
-  const menuIcon = toggle ? <XIcon /> : <MenuIcon />; 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+
 
   return (
     <nav
@@ -65,7 +61,9 @@ const MainNav: React.FC<MainNavProps> = ({
 
       <div className='lg:hidden md:hidden flex justify-start'>
   <div>
-    <div>
+    <div className={cn(
+      'border border-blue-300 rounded-2xl p-1', !toggle ? 'transition' : 'transition p-2  border-blue-800'
+    )}>
       <div
         onClick={() => setToggle(!toggle)}
         className="cursor-pointer"
