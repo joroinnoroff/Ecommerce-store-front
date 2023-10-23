@@ -5,8 +5,8 @@ const ModalImage = () => {
     <div>
       <button id="openModal">Open the modal</button>
 
-<dialog id="modal" class="modal">
-  <button id="closeModal" class="modal-close-btn">Close</button>
+<dialog id="modal" className="modal">
+  <button id="closeModal" className="modal-close-btn">Close</button>
   <p>...</p>
  
 </dialog>
