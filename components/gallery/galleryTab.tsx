@@ -4,13 +4,23 @@ import { Tab } from "@headlessui/react";
 import { cn } from "@/lib/utils";
 import { Image } from "@/types";
 
-// Create a Modal component (you can use a library or create your own)
+type GalleryTabProps = {
+  image: string;
+};
 
-const Modal = ({ image, onClose }) => {
+type ModalProps = {
+  image: string;
+  onClose: () => void;
+};
+
+const Modal: React.FC<ModalProps> = ({ image, onClose }) => {
   return (
     // Your modal content here, e.g., a full-screen image
     <div className="modal">
-      <button className="close-button absolute top-3 right-11 mr-20 font-bold text-1xl z-40 border p-3 rounded-md hover:bg-black hover:text-white transition-all" onClick={onClose}>
+      <button
+        className="close-button absolute top-3 right-11 mr-20 font-bold text-1xl z-40 border p-3 rounded-md hover:bg-black hover:text-white transition-all"
+        onClick={onClose}
+      >
         X Close Preview
       </button>
       <NextImage src={image.url} alt="" fill className="object-center object-contain z-10 py-10" />
@@ -48,13 +58,8 @@ const GalleryTab: React.FC<GalleryTabProps> = ({ image }) => {
           </span>
         </div>
         {/* ... your overlay */}
-    
- 
- 
       </div>
-      {isModalOpen && (
-        <Modal image={image} onClose={closeModal} />
-      )}
+      {isModalOpen && <Modal image={image} onClose={closeModal} />}
     </>
   );
 };
